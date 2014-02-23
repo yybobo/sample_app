@@ -39,4 +39,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+  
+  # 不然不识别capybara的函数，如visit
+  config.include Capybara::DSL
 end
